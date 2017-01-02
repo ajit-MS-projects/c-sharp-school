@@ -32,11 +32,11 @@ namespace CSharpFunctional
 
             printstr(".........======.........."); 
             lst.FindAll(x =>
-            {
+            {//Anonymous function/delegate (predicate) 
                return x<4;
             })
             .ForEach(x =>
-            {
+            {//Anonymous function/delegate (action)
                 Console.WriteLine(x);
                 });
 
