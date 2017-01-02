@@ -29,6 +29,7 @@ namespace CSharpFunctional
                     Console.WriteLine(x);
                 });
 
+
             printstr(".........======.........."); 
             lst.FindAll(x =>
             {
@@ -41,11 +42,17 @@ namespace CSharpFunctional
 
 
             Console.WriteLine("...............");
+            filterOdd(lst, x => x % 2 == 0).ForEach(prinltln);//passing function as argument
             Console.ReadLine();
         }
 
         static void printAnInt(int n){
             Console.WriteLine(n);
+        }
+
+        static List<int> filterOdd(List<int> input, Predicate<int> condition) {
+            // condition is a delegate instance here or reference to a function in other owrds
+            return input.FindAll(condition);
         }
     }
 }
