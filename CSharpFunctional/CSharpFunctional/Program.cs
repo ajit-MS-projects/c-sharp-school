@@ -17,7 +17,7 @@ namespace CSharpFunctional
             lst.ForEach(prinltln);
 
             printstr(""); printstr("");
-            lst.FindAll(x => x > 3).ForEach(x => prinltln(x));
+            lst.FindAll(x => x > 3).ForEach(x => prinltln(x));//lambdas and chaining of combinators
 
             printstr(""); printstr("");
             List<int> lst1 = lst.FindAll(x => x > 3);
