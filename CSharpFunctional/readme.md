@@ -3,7 +3,7 @@
 ## Action - side effect function with void return type and 1..16 inputs
 ## Predicate - bool return type
 ## Func - 1..16 inputs and T return type
-## Tuple - 1..7, TRest where trest is again tzpe of tuple to create nested tuples
+## Tuple - 1..7, TRest where TRest is again type of tuple to create nested tuples
 ### A tuple is just list of comma seperated values.
 ### use cases
 1. To represent a single set of data. For example, a tuple can represent a database record, and its components can represent individual fields of the record.
