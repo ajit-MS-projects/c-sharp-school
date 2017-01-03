@@ -9,7 +9,7 @@ namespace CSharpFunctional
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Action<String> printstr = Console.WriteLine;
             Action<int> prinltln = Console.WriteLine;
